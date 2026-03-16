@@ -35,6 +35,11 @@
     text-decoration: none;
     color: #272A33;
     text-transform: uppercase;
+    transition: color ease-in 0.3s;
+}
+
+.header__navigation-link:hover {
+    color: #EE753E
 }
 
 .header__burger-btn {
