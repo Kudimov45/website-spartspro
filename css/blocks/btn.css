@@ -1,0 +1,28 @@
+.btn {
+    color: #FFFFFF;
+    padding: 12px 30px;
+    background-color: #272A33;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 145%;
+    width: 159px
+}
+
+.btn--large {
+     width: 223px
+}
+
+@media (max-width: 576px) {
+    .btn {
+        display: block;
+        font-size: 16px;
+        width: 150px;
+    }
+
+    .btn--large {
+        display:inline;
+        font-size: 18px;
+        width: 223px
+    }
+}

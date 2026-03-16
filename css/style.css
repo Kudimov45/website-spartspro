@@ -1,0 +1,13 @@
+/* Global */
+@import "global/fonts.css";
+@import "global/reboot.css";
+@import "global/container.css";
+
+/* Blocks */
+@import "blocks/header.css";
+@import "blocks/recommendations.css";
+@import "blocks/catalog-list.css";
+@import "blocks/recommendation-card.css";
+@import "blocks/btn.css";
+@import "blocks/about.css";
+@import "blocks/burger.css";

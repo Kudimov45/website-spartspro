@@ -1,0 +1,115 @@
+.recommendation-card {
+    display: flex;
+    border-radius: 8px;
+    border: solid 1px #E0E6ED;
+    width: 100%;
+    /* margin-bottom: 30px; */
+}
+
+.recommendation-card__wrapper-info {
+    padding: 31px 30px;
+    width: 68.5%;
+}
+
+.recommendation-card__name {
+    margin: 0;
+    font-size: 18px;
+    line-height: 120%;
+    margin-bottom: 10px;
+    min-height: 66px;
+}
+
+.recommendation-card__inner {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.recommendation-card__indicator {
+    width: 14px;
+    height: 14px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recommendation-card__indicator--active {
+    background-color: #4FCF36;
+}
+
+.recommendation-card__indicator--disactive {
+     background-color: #EE753E;
+}
+
+.recommendation-card__status {
+    font-size: 16px;
+    line-height: 145%;
+}
+
+.recommendation-card__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 1560px) {
+    .recommendation-card__wrapper-info {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1160px) {
+    .recommendation-card__wrapper-info {
+        width: 50%;
+    }
+}
+
+@media (max-width: 890px) {
+    .recommendation-card__wrapper-info {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .recommendation-card__wrapper-info {
+        width: 62%;
+    }
+}
+
+@media (max-width: 576px) {
+    .recommendation-card {
+        flex-direction: column;
+    }
+
+    .recommendation-card__img {
+        width: 170px;
+        height: 170px;
+    }
+
+    .recommendation-card__wrapper-info {
+        width: calc(100%);
+        min-height: 203px;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .recommendation-card__name {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+    .recommendation-card__status {
+        font-size: 14px;
+    }
+
+    .recommendation-card__link {
+        display: block;
+    }
+
+    .recommendation-card__inner {
+        margin-bottom: 10px;
+    }
+}

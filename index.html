@@ -4,8 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <p>Hello</p>
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <a class="header__logo-link" href="index.html">
+                    <svg class="header__logo-icon" width="180" height="40" aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#icon-logo"></use>
+                    </svg>
+                </a>
+                <nav class="header__navigation">
+                    <ul class="header__navigation-list">
+                        <li class="header__navigation-item">
+                            <a class="header__navigation-link" href="#">Главная</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a class="header__navigation-link" href="#">Каталог</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a class="header__navigation-link" href="#">О компании</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a class="header__navigation-link" href="#">Оплата и доставка</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a class="header__navigation-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="header__burger-btn burger" type="button">
+                    <span class="burger__menu">
+                    </span>
+                </button>
+                <div class="header__burger-menu">
+                    <nav class="header__navigation header__navigation--active">
+                    <ul class="header__navigation-list">
+                        <li class="header__navigation-item">
+                            <a class="header__navigation-link" href="#">Главная</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a class="header__navigation-link" href="#">Каталог</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a class="header__navigation-link" href="#">О компании</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a class="header__navigation-link" href="#">Оплата и доставка</a>
+                        </li>
+                        <li class="header__navigation-item">
+                            <a class="header__navigation-link" href="#">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+                <div class="header__line"></div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="recommendations">
+            <div class="container">
+                <h2 class="recommendations__title">Рекомендуемое оборудование</h2>
+                <div class="recommendations__catalog">
+                    <ul class="catalog-list">
+                    </ul>
+                </div>
+                <div class="recommendations__wrapper">
+                    <a class="recommendations__link btn btn--large" href="#">Перейти в каталог</a>
+                </div>
+            </div>
+        </section>
+        <section class="about">
+            <div class="container">
+                <h2 class="about__title">О компании</h2>
+                <div class="about__wrapper">
+                    <div class="about__wrapper-img">
+                        <img class="about__img about__img--large" src="images/elevator-shaft.png" srcset="images/elevator-shaft@2x.png 2x" width="705" height="202" alt="Илюстрация">
+                        <img class="about__img" src="images/gold-elevator.png" srcset="images/gold-elevator@2x.png 2x" width="335" height="162" alt="Илюстрация">
+                        <img class="about__img" src="images/elevator.png" srcset="images/elevator@2x.png 2x" width="335" height="162" alt="Илюстрация">
+                    </div>
+                    <div class="about__wrapper-info">
+                        <p class="about__text">Компания «SPARTSPRO» специализируется на поставках лифтового оборудования, комплектующих и запчастей для лифтов и эскалаторов ведущих мировых и российских производителей.</p>
+                        <ul class="about__list">
+                            <li class="about__list-item">
+                                <div class="about__list-wrapper">
+                                    <svg class="about__list-icon" width="6" height="7" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                </div>
+                                <p class="about__info">Гарантия качества – работаем только с проверенными производителями.</p>
+                            </li>
+                            <li class="about__list-item">
+                                <div class="about__list-wrapper">
+                                    <svg class="about__list-icon" width="6" height="7" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                </div>
+                                <p class="about__info">Собственный склад – более 30 000 наименований в наличии для оперативных отгрузок.</p>
+                            </li>
+                            <li class="about__list-item">
+                                <div class="about__list-wrapper">
+                                    <svg class="about__list-icon" width="6" height="7" aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#icon-check"></use>
+                                    </svg>
+                                </div>
+                                <p class="about__info">Соблюдение сроков – приоритет компании: быстрая обработка заказов и доставка без задержек.</p>
+                            </li>
+                        </ul>
+                        <p class="about__text about__text--regular">Мы обеспечиваем бесперебойные поставки для ваших проектов. Оставьте заявку – и получите коммерческое предложение в кратчайшие сроки!</p>
+                        <a class="about__link btn btn--large" href="#">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/js/main.js" type="module"></script>
 </body>
 </html>
